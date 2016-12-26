@@ -1,0 +1,21 @@
+group 'io.disc99'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+group = 'microservices-cinema-complex'
+version = '1.0'
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
